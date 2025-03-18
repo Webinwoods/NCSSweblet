@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+    font-size: 24px;
+    color: #ffcc00;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('images/welding-bg.jpg') center/cover;
+}
+#home h2 {
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+#home p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+#home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #1a1a1a;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+#home a:hover {
+    background: #e6b800;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+section:nth-child(even) {
+    background: #2a2a2a;
+}
+
+/* Gallery */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+#gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* ========================= */
+/* Contact Form Styling */
+/* ========================= */
+
+#contact-form {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+}
+
+#contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #555;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+#contact-form button {
+    background: #ffcc00;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #e6b800;
+}
+/* Footer */
+footer {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Recent Work Section */
+#recent-work {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#recent-work h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+#recent-work p {
+    color: #d1d5db;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#recent-work .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#recent-work .grid div {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#recent-work .grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+#recent-work img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ========================= */
+/* About Page Styling */
+/* ========================= */
+
+#about {
+    position: relative;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    border-radius: 10px;
+}
+
+.about-container {
+    background: url('images/workshop-bg.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#about p {
+    color: #d1d5db;
+    font-size: 1.1rem;
+}
+/* Google Maps Styling */
+#contact iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+}
